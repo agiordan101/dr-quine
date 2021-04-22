@@ -15,7 +15,7 @@
 
 NAME = Sully
 
-SRC = $(NAME).c
+SRC =	$(NAME).c
 OBJ = $(SRC:%.c=%.o)
 
 CC = gcc
