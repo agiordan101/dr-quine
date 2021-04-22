@@ -15,10 +15,10 @@
 
 NAME = Sully
 
-SRC =	$(NAME).c
+SRC = $(NAME).c
 OBJ = $(SRC:%.c=%.o)
 
-CC = clang
+CC = gcc
 FLAGS += -Wall -Werror -Wextra
 
 all: $(NAME)
@@ -31,5 +31,6 @@ clean:
 
 fclean: clean
 		rm -f $(NAME)
+		rm -f *_*
 
 re: fclean all

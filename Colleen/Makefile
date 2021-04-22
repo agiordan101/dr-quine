@@ -18,7 +18,7 @@ NAME = Colleen
 SRC =	$(NAME).c
 OBJ = $(SRC:%.c=%.o)
 
-CC = clang
+CC = gcc
 FLAGS += -Wall -Werror -Wextra
 
 all: $(NAME)

@@ -18,13 +18,15 @@ NAME = Grace
 SRC =	$(NAME).c
 OBJ = $(SRC:%.c=%.o)
 
-CC = clang
+CC = gcc
 FLAGS += -Wall -Werror -Wextra
 
 all: $(NAME)
 
+
 $(NAME): $(OBJ)
 		$(CC) $(FLAGS) $(OBJ) -o $(NAME)
+
 
 clean:
 		rm -f $(OBJ)
