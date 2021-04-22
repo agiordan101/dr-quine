@@ -23,15 +23,14 @@ FLAGS += -Wall -Werror -Wextra
 
 all: $(NAME)
 
-
 $(NAME): $(OBJ)
 		$(CC) $(FLAGS) $(OBJ) -o $(NAME)
-
 
 clean:
 		rm -f $(OBJ)
 
 fclean: clean
 		rm -f $(NAME)
+		rm -r *_* || true
 
 re: fclean all

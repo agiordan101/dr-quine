@@ -31,6 +31,6 @@ clean:
 
 fclean: clean
 		rm -f $(NAME)
-		rm -f *_*
+		rm -f *_* || true
 
 re: fclean all
